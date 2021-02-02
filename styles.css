@@ -39,16 +39,15 @@ body {
     transform-style: preserve-3d;
 }
 
-#cubeOne {
+.cubes0 {
     animation: spin 20s infinite normal linear;
 }
 
-#cubeTwo {
+.cubes1 {
     animation: spin2 20s infinite normal linear;
 }
 
 .panels {
-    position: absolute;
     height: 300px;
     width: 300px;
     overflow: hidden;
@@ -105,51 +104,51 @@ body {
 
 
 
-.one {
+.face0 {
     transform: translateZ(150px);
 }
 
-.two {
+.face1 {
     transform: translateZ(-150px);
 }
 
-.three {
+.face2 {
     transform: translateX(150px) rotateY(90deg);
 }
 
-.four {
+.face3 {
     transform: translateX(-150px) rotateY(90deg);
 }
 
-.five {
+.face4 {
     transform: translateY(150px) rotateX(90deg);
 }
 
-.six {
+.face5 {
     transform: translateY(-150px) rotateX(90deg);
 }
 
-.seven {
+.face6 {
     transform: translateZ(150px);
 }
 
-.eight {
+.face7 {
     transform: translateZ(-150px);
 }
 
-.nine {
+.face8 {
     transform: translateX(150px) rotateY(90deg);
 }
 
-.ten {
+.face9 {
     transform: translateX(-150px) rotateY(90deg);
 }
 
-.eleven {
+.face10 {
     transform: translateY(150px) rotateX(90deg);
 }
 
-.twelve {
+.face11 {
     transform: translateY(-150px) rotateX(90deg);
 }
 
