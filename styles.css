@@ -19,63 +19,148 @@ body {
 }
 
 #img-container {
+    position: absolute;
     display: flex;
     flex-flow: row wrap;
-    width: 100vw;
-    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+    height: 900px;
+}
+
+.cubes {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+
+    width: 600px;
+    height: 900px;
+    transform-style: preserve-3d;
+}
+
+#cubeOne {
+    animation: spin 20s infinite normal linear;
+}
+
+#cubeTwo {
+    animation: spin2 20s infinite normal linear;
 }
 
 .panels {
-    height: 33.3333vh;
-    width: 25vw;
+    position: absolute;
+    height: 300px;
+    width: 300px;
     overflow: hidden;
 }
 
 #one {
-    object-position: top left;
+    object-position: left top;
 }
 
 #two {
-    object-position: -25vw top;
+    object-position: -300px top;
 }
 
 #three {
-    object-position: -50vw top;
+    object-position: -600px top;
 }
 
 #four {
-    object-position: -75vw top;
+    object-position: -900px top;
 }
 
 #five {
-    object-position: 0px -312px;
+    object-position: 0px -300px;
 }
 
 #six {
-    object-position: -25vw -312px;
+    object-position: -300px -300px;
 }
 
 #seven {
-    object-position: -50vw -312px;
+    object-position: -600px -300px;
 }
 
 #eight {
-    object-position: -75vw -312px;
+    object-position: -900px -300px;
 }
 
 #nine {
-    object-position: 0px -624px;
+    object-position: 0px -600px;
 }
 
 #ten {
-    object-position: -25vw -624px;
+    object-position: -300px -600px;
 }
 
 #eleven {
-    object-position: -50vw -624px;
+    object-position: -600px -600px;
 }
 
 #twelve {
-    object-position: -75vw -624px;
+    object-position: -900px -600px;
 }
 
+
+
+
+.one {
+    transform: translateZ(150px);
+}
+
+.two {
+    transform: translateZ(-150px);
+}
+
+.three {
+    transform: translateX(150px) rotateY(90deg);
+}
+
+.four {
+    transform: translateX(-150px) rotateY(90deg);
+}
+
+.five {
+    transform: translateY(150px) rotateX(90deg);
+}
+
+.six {
+    transform: translateY(-150px) rotateX(90deg);
+}
+
+.seven {
+    transform: translateZ(150px);
+}
+
+.eight {
+    transform: translateZ(-150px);
+}
+
+.nine {
+    transform: translateX(150px) rotateY(90deg);
+}
+
+.ten {
+    transform: translateX(-150px) rotateY(90deg);
+}
+
+.eleven {
+    transform: translateY(150px) rotateX(90deg);
+}
+
+.twelve {
+    transform: translateY(-150px) rotateX(90deg);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate3d(1, 2, 0, -720deg);
+    }
+}
+
+@keyframes spin2 {
+    0% {
+        transform: rotate3d(2, 1, 0, 720deg);
+    }
+}
