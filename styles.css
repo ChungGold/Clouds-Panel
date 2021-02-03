@@ -26,6 +26,20 @@ body {
     justify-content: center;
     width: 1200px;
     height: 900px;
+
+}
+
+.rotateMore {
+    animation: circle 10s infinite normal linear;
+}
+
+@keyframes circle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .cubes {
